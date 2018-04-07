@@ -1,0 +1,19 @@
+server:
+  port: 7803
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    username: root
+    password: twoxfour
+    url: jdbc:mysql://localhost:3306/springcloud
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:7803/eureka
